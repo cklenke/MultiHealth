@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A53236A31EDF0E44007B4AED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53236A21EDF0E44007B4AED /* AppDelegate.swift */; };
+		A53236A81EDF0E44007B4AED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53236A61EDF0E44007B4AED /* Main.storyboard */; };
+		A53236AA1EDF0E44007B4AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53236A91EDF0E44007B4AED /* Assets.xcassets */; };
+		A53236AD1EDF0E44007B4AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53236AB1EDF0E44007B4AED /* LaunchScreen.storyboard */; };
+		A53236B81EDF0E44007B4AED /* Color_SpeechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53236B71EDF0E44007B4AED /* Color_SpeechTests.swift */; };
+		A53236C31EDF0E44007B4AED /* Color_SpeechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53236C21EDF0E44007B4AED /* Color_SpeechUITests.swift */; };
+		A53236D11EDF1B27007B4AED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A53236D01EDF1B27007B4AED /* Default-568h@2x.png */; };
+		A5CFFCEA1EE5C7D300AB510E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CFFCE91EE5C7D300AB510E /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A53236B41EDF0E44007B4AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A53236971EDF0E43007B4AED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A532369E1EDF0E44007B4AED;
+			remoteInfo = "Color Speech";
+		};
+		A53236BF1EDF0E44007B4AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A53236971EDF0E43007B4AED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A532369E1EDF0E44007B4AED;
+			remoteInfo = "Color Speech";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A532369F1EDF0E44007B4AED /* Color Speech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Speech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53236A21EDF0E44007B4AED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A53236A71EDF0E44007B4AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A53236A91EDF0E44007B4AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A53236AC1EDF0E44007B4AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A53236AE1EDF0E44007B4AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53236B31EDF0E44007B4AED /* Color SpeechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color SpeechTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53236B71EDF0E44007B4AED /* Color_SpeechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_SpeechTests.swift; sourceTree = "<group>"; };
+		A53236B91EDF0E44007B4AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53236BE1EDF0E44007B4AED /* Color SpeechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color SpeechUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53236C21EDF0E44007B4AED /* Color_SpeechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_SpeechUITests.swift; sourceTree = "<group>"; };
+		A53236C41EDF0E44007B4AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53236D01EDF1B27007B4AED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A5CFFCE91EE5C7D300AB510E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A532369C1EDF0E44007B4AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53236B01EDF0E44007B4AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53236BB1EDF0E44007B4AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A53236961EDF0E43007B4AED = {
+			isa = PBXGroup;
+			children = (
+				A53236D01EDF1B27007B4AED /* Default-568h@2x.png */,
+				A53236A11EDF0E44007B4AED /* Color Speech */,
+				A53236B61EDF0E44007B4AED /* Color SpeechTests */,
+				A53236C11EDF0E44007B4AED /* Color SpeechUITests */,
+				A53236A01EDF0E44007B4AED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A53236A01EDF0E44007B4AED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A532369F1EDF0E44007B4AED /* Color Speech.app */,
+				A53236B31EDF0E44007B4AED /* Color SpeechTests.xctest */,
+				A53236BE1EDF0E44007B4AED /* Color SpeechUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A53236A11EDF0E44007B4AED /* Color Speech */ = {
+			isa = PBXGroup;
+			children = (
+				A5CFFCE91EE5C7D300AB510E /* ViewController.swift */,
+				A53236A21EDF0E44007B4AED /* AppDelegate.swift */,
+				A53236A61EDF0E44007B4AED /* Main.storyboard */,
+				A53236A91EDF0E44007B4AED /* Assets.xcassets */,
+				A53236AB1EDF0E44007B4AED /* LaunchScreen.storyboard */,
+				A53236AE1EDF0E44007B4AED /* Info.plist */,
+			);
+			path = "Color Speech";
+			sourceTree = "<group>";
+		};
+		A53236B61EDF0E44007B4AED /* Color SpeechTests */ = {
+			isa = PBXGroup;
+			children = (
+				A53236B71EDF0E44007B4AED /* Color_SpeechTests.swift */,
+				A53236B91EDF0E44007B4AED /* Info.plist */,
+			);
+			path = "Color SpeechTests";
+			sourceTree = "<group>";
+		};
+		A53236C11EDF0E44007B4AED /* Color SpeechUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A53236C21EDF0E44007B4AED /* Color_SpeechUITests.swift */,
+				A53236C41EDF0E44007B4AED /* Info.plist */,
+			);
+			path = "Color SpeechUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A532369E1EDF0E44007B4AED /* Color Speech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A53236C71EDF0E44007B4AED /* Build configuration list for PBXNativeTarget "Color Speech" */;
+			buildPhases = (
+				A532369B1EDF0E44007B4AED /* Sources */,
+				A532369C1EDF0E44007B4AED /* Frameworks */,
+				A532369D1EDF0E44007B4AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Color Speech";
+			productName = "Color Speech";
+			productReference = A532369F1EDF0E44007B4AED /* Color Speech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A53236B21EDF0E44007B4AED /* Color SpeechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A53236CA1EDF0E44007B4AED /* Build configuration list for PBXNativeTarget "Color SpeechTests" */;
+			buildPhases = (
+				A53236AF1EDF0E44007B4AED /* Sources */,
+				A53236B01EDF0E44007B4AED /* Frameworks */,
+				A53236B11EDF0E44007B4AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A53236B51EDF0E44007B4AED /* PBXTargetDependency */,
+			);
+			name = "Color SpeechTests";
+			productName = "Color SpeechTests";
+			productReference = A53236B31EDF0E44007B4AED /* Color SpeechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A53236BD1EDF0E44007B4AED /* Color SpeechUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A53236CD1EDF0E44007B4AED /* Build configuration list for PBXNativeTarget "Color SpeechUITests" */;
+			buildPhases = (
+				A53236BA1EDF0E44007B4AED /* Sources */,
+				A53236BB1EDF0E44007B4AED /* Frameworks */,
+				A53236BC1EDF0E44007B4AED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A53236C01EDF0E44007B4AED /* PBXTargetDependency */,
+			);
+			name = "Color SpeechUITests";
+			productName = "Color SpeechUITests";
+			productReference = A53236BE1EDF0E44007B4AED /* Color SpeechUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A53236971EDF0E43007B4AED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Collin Klenke";
+				TargetAttributes = {
+					A532369E1EDF0E44007B4AED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 676786F3K2;
+						ProvisioningStyle = Automatic;
+					};
+					A53236B21EDF0E44007B4AED = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A532369E1EDF0E44007B4AED;
+					};
+					A53236BD1EDF0E44007B4AED = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A532369E1EDF0E44007B4AED;
+					};
+				};
+			};
+			buildConfigurationList = A532369A1EDF0E43007B4AED /* Build configuration list for PBXProject "Color Speech" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A53236961EDF0E43007B4AED;
+			productRefGroup = A53236A01EDF0E44007B4AED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A532369E1EDF0E44007B4AED /* Color Speech */,
+				A53236B21EDF0E44007B4AED /* Color SpeechTests */,
+				A53236BD1EDF0E44007B4AED /* Color SpeechUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A532369D1EDF0E44007B4AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53236AD1EDF0E44007B4AED /* LaunchScreen.storyboard in Resources */,
+				A53236D11EDF1B27007B4AED /* Default-568h@2x.png in Resources */,
+				A53236AA1EDF0E44007B4AED /* Assets.xcassets in Resources */,
+				A53236A81EDF0E44007B4AED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53236B11EDF0E44007B4AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53236BC1EDF0E44007B4AED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A532369B1EDF0E44007B4AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CFFCEA1EE5C7D300AB510E /* ViewController.swift in Sources */,
+				A53236A31EDF0E44007B4AED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53236AF1EDF0E44007B4AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53236B81EDF0E44007B4AED /* Color_SpeechTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53236BA1EDF0E44007B4AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53236C31EDF0E44007B4AED /* Color_SpeechUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A53236B51EDF0E44007B4AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A532369E1EDF0E44007B4AED /* Color Speech */;
+			targetProxy = A53236B41EDF0E44007B4AED /* PBXContainerItemProxy */;
+		};
+		A53236C01EDF0E44007B4AED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A532369E1EDF0E44007B4AED /* Color Speech */;
+			targetProxy = A53236BF1EDF0E44007B4AED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A53236A61EDF0E44007B4AED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A53236A71EDF0E44007B4AED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A53236AB1EDF0E44007B4AED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A53236AC1EDF0E44007B4AED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A53236C51EDF0E44007B4AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A53236C61EDF0E44007B4AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A53236C81EDF0E44007B4AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 676786F3K2;
+				INFOPLIST_FILE = "Color Speech/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klenke.Color-Speech";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A53236C91EDF0E44007B4AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 676786F3K2;
+				INFOPLIST_FILE = "Color Speech/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klenke.Color-Speech";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A53236CB1EDF0E44007B4AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Color SpeechTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klenke.Color-SpeechTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Color Speech.app/Color Speech";
+			};
+			name = Debug;
+		};
+		A53236CC1EDF0E44007B4AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Color SpeechTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klenke.Color-SpeechTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Color Speech.app/Color Speech";
+			};
+			name = Release;
+		};
+		A53236CE1EDF0E44007B4AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Color SpeechUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klenke.Color-SpeechUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Color Speech";
+			};
+			name = Debug;
+		};
+		A53236CF1EDF0E44007B4AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Color SpeechUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klenke.Color-SpeechUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Color Speech";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A532369A1EDF0E43007B4AED /* Build configuration list for PBXProject "Color Speech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53236C51EDF0E44007B4AED /* Debug */,
+				A53236C61EDF0E44007B4AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A53236C71EDF0E44007B4AED /* Build configuration list for PBXNativeTarget "Color Speech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53236C81EDF0E44007B4AED /* Debug */,
+				A53236C91EDF0E44007B4AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A53236CA1EDF0E44007B4AED /* Build configuration list for PBXNativeTarget "Color SpeechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53236CB1EDF0E44007B4AED /* Debug */,
+				A53236CC1EDF0E44007B4AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A53236CD1EDF0E44007B4AED /* Build configuration list for PBXNativeTarget "Color SpeechUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53236CE1EDF0E44007B4AED /* Debug */,
+				A53236CF1EDF0E44007B4AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A53236971EDF0E43007B4AED /* Project object */;
+}
