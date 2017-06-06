@@ -16,6 +16,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     @IBOutlet weak var BeginButton: UIButton!
     @IBOutlet weak var CounterLabel: UILabel!
     
+    
     //timing vars
     var timer = Timer()
     var countdown = Timer()
