@@ -10,6 +10,7 @@ import UIKit
 import Speech
 import GameKit
 
+//this is to shuffle the index array we make
 extension Array {
     mutating func shuffle() {
         for i in 0..<(count - 1) {
@@ -23,7 +24,7 @@ extension Array {
 
 class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
     
-    
+    //storyboard elements
     @IBOutlet weak var topleft: UIImageView!
     @IBOutlet weak var topright: UIImageView!
     @IBOutlet weak var center: UIImageView!
@@ -33,26 +34,31 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
     @IBOutlet weak var BeginButton: UIButton!
     @IBOutlet weak var countDownLabel: UILabel!
     
+    //timing variables - used to set timers
     var timer = Timer()
     var countdown = Timer()
     var hideTimer = Timer()
     var countDownCount: Int = 60
     
+    //this is the array of images - to add more simply add a comma and copy the format of the one above
+    //then drag the image with xxx.png name into the Assets.xcassets folder in the project navigator on the left
     var images: [UIImage] = [
         UIImage(named: "Giraffe")!,
         UIImage(named: "Elephant")!,
         UIImage(named: "Flamingo")!
     ]
     
-    var imageStrings: [String] = [
-        "giraffe",
-        "elephant",                 //important to keep these lowercase
-        "flamingo"
+    //2D array of strings - each row is for a different image
+    var imageStrings: [[String]] = [
+        ["giraffe", "mammal", "animal"],
+        ["elephant", "animal"],                 //important to keep these lowercase
+        ["flamingo", "bird"]
     ]
     
-    var stringToGuess: String = ""
+    var stringToGuess: [String] = []
     
-    var arrayIndex: [Int] = Array(0...2)
+    //create an array to pick which image is next
+    var arrayIndex: [Int] = Array(0...2) //change 2 to n-1 for n pictures
     var correct: Int = 0
     var incorrect: Int = 0
     var lastPos: Int = 6
@@ -101,6 +107,7 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
         self.countDownLabel.text = String(format: "%d", self.countDownCount)
     }
     
+    //permissions for using the microphone
     func requestSpeechAuthorization(){
         SFSpeechRecognizer.requestAuthorization { authStatus in
             OperationQueue.main.addOperation {
@@ -123,6 +130,7 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
     }
     
+    //clears the image off the screen no matter what position it is in
     func hideImages(){
         self.topright.isHidden = true
         self.topleft.isHidden = true
@@ -132,14 +140,14 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     func generateImage(){
-        if(self.arrayIndex.isEmpty){
+        if(self.arrayIndex.isEmpty){ //avoid issues with not having another image to display, the game should be over
             self.endGame()
             return
         }
         let i = Int(self.arrayIndex.removeFirst())
         var pos = Int(arc4random()%5)
         while (pos == self.lastPos){
-            pos = Int(arc4random()%5)
+            pos = Int(arc4random()%5)               //we want the position to change, so we keep track of the last position and put the next one somewhere else
         }
         self.lastPos = pos
         
@@ -165,6 +173,8 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
             self.hideImages()
             self.endGame()
         }
+        
+        //set timer to hide the image after 1 second
         self.hideTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(hideImages), userInfo: nil, repeats: false)
     }
     
@@ -172,9 +182,15 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         //potentially filter the words here, return if its not part of a group of strings or something
         
-        if(self.stringToGuess == spokenWord){
-            self.correct += 1
-        } else {
+        var cor = 0
+        for word in self.stringToGuess {
+            if spokenWord == word{          //go through each word it could be and check if it is right
+                self.correct += 1
+                cor = 1
+                break
+            }
+        }
+        if(cor == 0){
             self.incorrect += 1
         }
         //self.hideImages()
@@ -185,6 +201,7 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
         
     }
     
+    //clear everything and display results
     func endGame(){
         audioEngine.stop()
         request.endAudio()
@@ -227,7 +244,7 @@ class PhotosViewController: UIViewController, SFSpeechRecognizerDelegate {
                 var lastWord: String = ""
                 let bestString = result.bestTranscription.formattedString
                 
-                //the audio API appens to a string each with each word the user says, so we need this loop to get the last word spoken - the newest color
+                //the audio API appends to a string each with each word the user says, so we need this loop to get the last word spoken - the newest color
                 for segment in result.bestTranscription.segments {
                     let index = bestString.index(bestString.startIndex, offsetBy: segment.substringRange.location)
                     lastWord = bestString.substring(from: index)
